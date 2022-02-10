@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/captcha.css" rel="stylesheet">
+    <title>PMC Accessibility Workshop 2022 - Exercise 2</title>
+  </head>
+  <body class="d-flex flex-column h-100  min-vh-100" onload="createCaptcha()">
+    <main class="flex-shrink-0">
+        <div class="container">
+          <div class="d-flex flex-row justify-content-center">
+            <form id="loginForm" onsubmit="validateCaptcha()">
+              <fieldset>
+                <legend>User Login:</legend>
+                <div class="mb-3">
+                  <input type="email" class="form-control" id="emailAddress" placeholder="Email Address">
+                </div>
+                <div class="mb-3">
+                  <input type="password" class="form-control" id="emailPassword" placeholder="Password">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="rememberMe">
+                  <label class="form-check-label" for="rememberMe">Remember Me</label>
+                </div>
+                <div class="mb-3">
+                  <div id="captcha"></div>
+                  <input type="text" class="form-control" id="captchaTextBox" placeholder="Enter code"/>
+                  <div id="captchaMsg"></div>
+                </div>
+                <div id="login" class="btn btn-primary">Login</div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+    </main>
+    <footer class="footer mt-auto py-3 bg-white">
+        <div class="container">
+            <center>
+            <nav aria-label="Page navigation">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="accessibility-workshop-exercise-1.html">Previous</a></li>
+                  <li class="page-item"><a class="page-link" href="accessibility-workshop-exercise-1.html">1</a></li>
+                  <li class="page-item active"><a class="page-link" href="accessibility-workshop-exercise-2.html">2</a></li>
+                  <li class="page-item"><a class="page-link" href="accessibility-workshop-exercise-3.html" aria-current="page">3</a></li>
+                  <li class="page-item"><a class="page-link" href="accessibility-workshop-exercise-3.html">Next</a></li>
+                </ul>
+            </nav>
+        </center>
+        </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/captcha.js"></script>
+    <script src="js/form.js"></script>
+  </body>
+</html>
