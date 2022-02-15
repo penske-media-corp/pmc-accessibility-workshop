@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+    <title>PMC Accessibility Workshop 2022 - Exercise 1</title>
+  </head>
+  <body class="d-flex flex-column h-100  min-vh-100 justify-content-center">
+    <main class="flex-shrink-0">
+      <div class="article container">
+        <div class="row">
+          <h1>Super Bowl 2022 Halftime Performers Revealed: Dr. Dre, Kendrick Lamar, Eminem, Mary J. Blige and Snoop Dogg</h1>
+          <img src="../img/SBHTS-2022.jpg" alt="SBHTS-2022.jpg" aria-labelledby="caption"/>
+          <p class="solution">&uarr; Featured image ALT description repeats the image filename and is not at all descriptive. If ALT is utilized, you don't need to also use ARIA labels. ARIA labels are useful for elements that don't have attributes for descriptions.</p>
+          <p id="caption"><small>Courtesy Roc Nation</small></p>
+          <p class="solution">&uarr; Caption for image also not very descriptive.</p>
+          <p class="heading">Main Lineup</p>
+          <p class="solution">&uarr; With H1 reserved for article title, headings for each section should use H2.</p>
+          <p>Pepsi, the NFL and Roc Nation have assembled a truly memorable lineup of performers for the Pepsi Super Bowl LVI<span class="solution">&larr; Roman numerals don't get called out by screen readers, descriptive text for screen readers should be utilized.</span> Halftime Show: Dr. Dre, Snoop Dogg, <a href="https://www.eminem.com/" target="_blank">Eminem</a><span class="solution">&larr; Links that open a new window / tab should warn users utilizing screen readers.</span>, Mary J. Blige and Kendrick Lamar will take the world's BIGGEST<span class="solution">&larr; All caps is a visual signal of emphasis and not very useful for those who have disabilities.</span> stage at SoFi Stadium in Inglewood, CA on Sunday, Feb. 13, 2022, airing on NBC.</p>
+          <p>The Pepsi Super Bowl LVI Halftime Show marks the first time these five multi-award-winning artists will perform together on stage, holding a special significance for the greater Los Angeles community: Not only are Dre, Snoop and Lamar native Angelenos, the city is hosting the Super Bowl for the first time in nearly 30 years. <i>Collectively, the artists have been awarded 43 Grammys and between them have 22 No. 1 albums on the Billboard 200.</i><span class="solution">&larr; Use of &lt;i&gt; tags will not be called out by screen readers, should be updated to &lt;em&gt;</span></p>
+          <p class="heading">Collaboration</p>
+          <p class="solution">&uarr; With H1 reserved for article title, headings for each section should use H2.</p>
+          <p>As part of the collaboration around the Pepsi Super Bowl Halftime Show, Pepsi and the NFL have also joined together to support the launch of <b>Regional School #1</b><span class="solution">&larr; Use of &lt;b&gt; tags will not be called out by screen readers, should be updated to &lt;strong&gt;</span>, a magnet high school in South Los Angeles that is set to open for students next fall as part of the LAUSD<span class="solution">&larr; Acronyms and abbreviations are hard for screen readers to parse with no context, should have a descriptive note for screen readers only</span>. The high school is based on the USC Iovine and Young Academy, a program founded by Jimmy Iovine and Andre "Dr. Dre" Young that will offer a unique educational model focused on the theme of Integrated Design, Technology, and Entrepreneurship.</p>
+        </div>
+      </div>
+    </main>
+    <footer class="footer mt-auto py-3 bg-white">
+        <div class="container">
+          <center>
+            <nav aria-label="Page navigation">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="index.html">Previous</a></li>
+                  <li class="page-item active"><a class="page-link" href="accessibility-workshop-exercise-1.html" aria-current="page">1</a></li>
+                  <li class="page-item"><a class="page-link" href="accessibility-workshop-exercise-2.html">2</a></li>
+                  <li class="page-item"><a class="page-link" href="accessibility-workshop-exercise-3.html">3</a></li>
+                  <li class="page-item"><a class="page-link" href="accessibility-workshop-exercise-2.html">Next</a></li>
+                </ul>
+            </nav>
+          </center>
+        </div>
+    </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
